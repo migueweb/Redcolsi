@@ -1,19 +1,23 @@
-import { PROJECTS_DATA } from "./data.js";
+import { PROJECTS_DATA, GALERY_DATA } from "./data.js";
+
+showGaleryItems(GALERY_DATA);
+showAccordionItems(PROJECTS_DATA);
 
 
-const showAccordionItems = (data) => {
-    let projectsAccordion = document.getElementById('projectsAccordion');
-    projectsAccordion.innerHTMl = '';
+function showAccordionItems(data){
+  let projectsAccordion = document.getElementById('projectsAccordion');
+  projectsAccordion.innerHTMl = '';
+  
+  for(const element of data){
+    let i = data.indexOf(element);
+    
+    let accordionItem = document.createElement('article')
+    accordionItem.classList.add('accordion-item', 'p-2')
 
-    for (let i = 0; i <= data.length; i++) {
-
-        let item = document.createElement('article')
-        item.classList.add('accordion-item', 'p-2')
-
-        item.innerHTML = `
+    accordionItem.innerHTML = `
         <h2 class="accordion-header">
           <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item-${i}">
-            <p class="text-capitalize">${data[i].title.toLowerCase()}</p>
+          <p class="text-capitalize">${data[i].title.toLowerCase()}</p>
           </button>
         </h2>
         <div id="accordion-item-${i}" class="accordion-collapse collapse" data-bs-parent="project-1">
@@ -23,12 +27,28 @@ const showAccordionItems = (data) => {
         </div>
 
           `
-        projectsAccordion.appendChild(item);
-    }
+    projectsAccordion.appendChild(accordionItem);
 
-    console.clear()
+  }
+
 }
 
-showAccordionItems(PROJECTS_DATA)
+function showGaleryItems(images) {
+  let galeyItemsWrapper = document.getElementById('galeyItemsWrapper');
+  galeyItemsWrapper.innerHTML = ''
 
-console.clear()
+  for(const imagen of images){
+    let image = images.indexOf(imagen);
+    let galeryItem = document.createElement('div')
+    galeryItem.classList.add('col-6', 'col-lg-4', 'col-md-6', 'portfolio-item', 'filter-app')
+
+    galeryItem.innerHTML = `
+      <article class="portfolio-wrap">
+        <img src="${images[image].url}" class="img-fluid" alt="">
+      </article>
+    `
+    galeyItemsWrapper.appendChild(galeryItem);
+
+  }
+}
+

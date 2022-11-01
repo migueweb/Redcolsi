@@ -1,4 +1,4 @@
-export const PROJECTS_DATA = [
+const PROJECTS_DATA = [
     {
         title:"Cierre de brechas metrológicas en Mypimes agroindustriales de la Región Caribe",
         members:["Nayelis Andrea De La Rosa Caro"," Carlos Marzio Rangel de León"], 
@@ -74,3 +74,69 @@ export const PROJECTS_DATA = [
     
 
 ]
+
+const GALERY_DATA = [
+    {
+        url:"assets/img/galery/galery-0.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-1.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-2.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-3.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-4.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-5.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-6.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-7.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-8.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-9.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-10.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-11.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-12.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-13.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-14.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-15.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-16.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-17.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-18.jpeg"
+    },
+    {
+        url:"assets/img/galery/galery-19.jpeg"
+    },
+
+]
+
+export {PROJECTS_DATA, GALERY_DATA};

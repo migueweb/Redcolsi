@@ -1,9 +1,3 @@
-/**
-* Template Name: FlexStart - v1.11.1
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -199,10 +193,10 @@
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
         itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
+        layoutMode: 'masonry'
       });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+/*       let portfolioFilters = select('#portfolio-flters li', true);
 
       on('click', '#portfolio-flters li', function(e) {
         e.preventDefault();
@@ -215,7 +209,7 @@
           filter: this.getAttribute('data-filter')
         });
         aos_init();
-      }, true);
+      }, true); */
     }
 
   });
