@@ -260,9 +260,4 @@
     aos_init();
   });
 
-  /**
-   * Initiate Pure Counter 
-   */
-  new PureCounter();
-
 })();
