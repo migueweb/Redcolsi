@@ -1,16 +1,19 @@
-import { PROJECTS_DATA } from "./data.js";
+import { PROJECTS_DATA, GALERY_DATA } from "./data.js";
+
+showGaleryItems(GALERY_DATA)
+showAccordionItems(PROJECTS_DATA)
 
 
-const showAccordionItems = (data) => {
-    let projectsAccordion = document.getElementById('projectsAccordion');
-    projectsAccordion.innerHTMl = '';
+function showAccordionItems(data){
+  let projectsAccordion = document.getElementById('projectsAccordion');
+  projectsAccordion.innerHTMl = '';
 
-    for (let i = 0; i <= data.length; i++) {
+  for (let i = 0; i <= data.length; i++) {
 
-        let item = document.createElement('article')
-        item.classList.add('accordion-item', 'p-2')
+    let accordionItem = document.createElement('article')
+    accordionItem.classList.add('accordion-item', 'p-2')
 
-        item.innerHTML = `
+    accordionItem.innerHTML = `
         <h2 class="accordion-header">
           <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item-${i}">
             <p class="text-capitalize">${data[i].title.toLowerCase()}</p>
@@ -23,12 +26,27 @@ const showAccordionItems = (data) => {
         </div>
 
           `
-        projectsAccordion.appendChild(item);
-    }
+    projectsAccordion.appendChild(accordionItem);
+  }
 
-    console.clear()
 }
 
-showAccordionItems(PROJECTS_DATA)
+function showGaleryItems(images) {
+  let galeyItemsWrapper = document.getElementById('galeyItemsWrapper');
+  galeyItemsWrapper.innerHTML = ''
 
-console.clear()
+  for (let image = 0; image <= images.length; image++) {
+
+    let galeryItem = document.createElement('div')
+    galeryItem.classList.add('col-6', 'col-lg-4', 'col-md-6', 'portfolio-item', 'filter-app')
+
+    galeryItem.innerHTML = `
+      <article class="portfolio-wrap">
+        <img src="${images[image].url}" class="img-fluid" alt="">
+      </article>
+    `
+    galeyItemsWrapper.appendChild(galeryItem);
+
+  }
+}
+
