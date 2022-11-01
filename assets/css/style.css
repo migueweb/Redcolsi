@@ -187,10 +187,10 @@ section {
 }
 
 .header .logo span {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #012970;
+  color: var(--primary);
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
 }
@@ -224,9 +224,9 @@ section {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-family: "Nunito", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
-  color: #013289;
+  color: var(--primary);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -438,111 +438,28 @@ section {
 /*--------------------------------------------------------------
 # Carousel Section
 --------------------------------------------------------------*/
+#carousel{
+  padding: 0 0;
+}
 .carousel-item{
-  height: 560px;
+  height: 250px;
 }
 .carousel-item img{
   position: relative;
   height: 100%;
 }
-/* .carousel-item img::before{
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: #000;
-} */
-/* .hero {
-  width: 100%;
-  height: 100vh;
-  background: url(../img/hero-bg.png) top center no-repeat;
-  background-size: cover;
-}
 
-.hero h1 {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  color: #012970;
-}
-
-.hero h2 {
-  color: #444444;
-  margin: 15px 0 0 0;
-  font-size: 26px;
-}
-
-.hero .btn-get-started {
-  margin-top: 30px;
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 4px;
-  transition: 0.5s;
-  color: #fff;
-  background: #4154f1;
-  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
-}
-
-.hero .btn-get-started span {
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-.hero .btn-get-started i {
-  margin-left: 5px;
-  font-size: 18px;
-  transition: 0.3s;
-}
-
-.hero .btn-get-started:hover i {
-  transform: translateX(5px);
-}
-
-.hero .hero-img {
-  text-align: right;
-}
-
-@media (min-width: 1024px) {
-  .hero {
-    background-attachment: fixed;
+@media (min-width: 768px) {
+  .carousel-item{
+    height: 500px;
   }
 }
 
-@media (max-width: 991px) {
-  .hero {
-    height: auto;
-    padding: 120px 0 60px 0;
-  }
-
-  .hero .hero-img {
-    text-align: center;
-    margin-top: 80px;
-  }
-
-  .hero .hero-img img {
-    width: 80%;
+@media (min-width: 1200px) {
+  .carousel-item{
+    height: 700px;
   }
 }
-
-@media (max-width: 768px) {
-  .hero {
-    text-align: center;
-  }
-
-  .hero h1 {
-    font-size: 32px;
-  }
-
-  .hero h2 {
-    font-size: 24px;
-  }
-
-  .hero .hero-img img {
-    width: 100%;
-  }
-} */
 
 /*--------------------------------------------------------------
 # Index Page
