@@ -17,7 +17,7 @@ function showAccordionItems(data){
     accordionItem.innerHTML = `
         <h2 class="accordion-header">
           <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item-${i}">
-          <p class="text-capitalize">${data[i].title.toLowerCase()}</p>
+          <p class="text-capitalize"><b>${i + 1}.</b> &nbsp;${data[i].title.toLowerCase()}</p>
           </button>
         </h2>
         <div id="accordion-item-${i}" class="accordion-collapse collapse" data-bs-parent="project-1">
