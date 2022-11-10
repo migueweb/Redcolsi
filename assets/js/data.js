@@ -4,7 +4,7 @@ const PROJECTS_DATA = [
         members:["Nayelis Andrea De La Rosa Caro"," Carlos Marzio Rangel de León"], 
     },
     {
-        title:"Sistema de multi-ayuda y apoyo para personas con discapacidad",
+        title:"Sistema para optimizar el traslado de pacientes a hospitales",
         members:["Wendy Vanesa duran Camargo"," Juan Camilo Gómez Macias "],
     },
     {
