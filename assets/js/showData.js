@@ -40,7 +40,8 @@ function showGaleryItems(images) {
   for(const imagen of images){
     let image = images.indexOf(imagen);
     let galeryItem = document.createElement('div')
-    galeryItem.classList.add('col-6', 'col-lg-4', 'col-md-6', 'portfolio-item', 'filter-app')
+    let filter = `filter-${images[image].filter}`
+    galeryItem.classList.add('col-6', 'col-lg-4', 'col-md-6', 'portfolio-item', filter)
 
     galeryItem.innerHTML = `
       <article class="portfolio-wrap">

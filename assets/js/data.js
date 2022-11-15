@@ -77,64 +77,84 @@ const PROJECTS_DATA = [
 
 const GALERY_DATA = [
     {
-        url:"assets/img/galery/galery-0.jpeg"
+        url:"assets/img/galery/galery-0.jpeg",
+        filert:"grupo_1"
     },
     {
-        url:"assets/img/galery/galery-1.jpeg"
+        url:"assets/img/galery/galery-1.jpeg",
+        filter:"grupo_1"
     },
     {
-        url:"assets/img/galery/galery-2.jpeg"
+        url:"assets/img/galery/galery-2.jpeg",
+        filter:"grupo_1"
     },
     {
-        url:"assets/img/galery/galery-3.jpeg"
+        url:"assets/img/galery/galery-3.jpeg",
+        filter:"grupo_1"
     },
     {
-        url:"assets/img/galery/galery-4.jpeg"
+        url:"assets/img/galery/galery-4.jpeg",
+        filter:"grupo_1"
     },
     {
-        url:"assets/img/galery/galery-5.jpeg"
+        url:"assets/img/galery/galery-5.jpeg",
+        filter:"grupo_1"
     },
     {
-        url:"assets/img/galery/galery-6.jpeg"
+        url:"assets/img/galery/galery-6.jpeg",
+        filter:"grupo_1"
     },
     {
-        url:"assets/img/galery/galery-7.jpeg"
+        url:"assets/img/galery/galery-7.jpeg",
+        filter:"grupo_1"
     },
     {
-        url:"assets/img/galery/galery-8.jpeg"
+        url:"assets/img/galery/galery-8.jpeg",
+        filter:"grupo_1"
     },
     {
-        url:"assets/img/galery/galery-9.jpeg"
+        url:"assets/img/galery/galery-9.jpeg",
+        filter:"grupo_2"
     },
     {
-        url:"assets/img/galery/galery-10.jpeg"
+        url:"assets/img/galery/galery-10.jpeg",
+        filter:"grupo_2"
     },
     {
-        url:"assets/img/galery/galery-11.jpeg"
+        url:"assets/img/galery/galery-11.jpeg",
+        filter:"grupo_2"
     },
     {
-        url:"assets/img/galery/galery-12.jpeg"
+        url:"assets/img/galery/galery-12.jpeg",
+        filter:"grupo_2"
     },
     {
-        url:"assets/img/galery/galery-13.jpeg"
+        url:"assets/img/galery/galery-13.jpeg",
+        filter:"grupo_2"
     },
     {
-        url:"assets/img/galery/galery-14.jpeg"
+        url:"assets/img/galery/galery-14.jpeg",
+        filter:"grupo_2"
     },
     {
-        url:"assets/img/galery/galery-15.jpeg"
+        url:"assets/img/galery/galery-15.jpeg",
+        filter:"grupo_2"
     },
     {
-        url:"assets/img/galery/galery-16.jpeg"
+        url:"assets/img/galery/galery-16.jpeg",
+        filter:"grupo_2"
     },
     {
-        url:"assets/img/galery/galery-17.jpeg"
+        url:"assets/img/galery/galery-17.jpeg",
+        filter:"grupo_2"
     },
     {
-        url:"assets/img/galery/galery-18.jpeg"
+        url:"assets/img/galery/galery-18.jpeg",
+        filter:"grupo_2"
     },
     {
-        url:"assets/img/galery/galery-19.jpeg"
+        url:"assets/img/galery/galery-19.jpeg",
+        filter:"grupo_2"
     },
 
 ]
