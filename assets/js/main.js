@@ -200,12 +200,15 @@
 
       on('click', '#portfolio-flters li', function(e) {
         e.preventDefault();
-        console.log(this);
         portfolioFilters.forEach(function(el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
-
+        
+        for (const item of document.querySelectorAll('.portfolio-item')) {
+          item.classList.remove('d-none');
+        }
+        
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });

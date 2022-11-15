@@ -78,7 +78,7 @@ const PROJECTS_DATA = [
 const GALERY_DATA = [
     {
         url:"assets/img/galery/galery-0.jpeg",
-        filert:"grupo_1"
+        filter:"grupo_1"
     },
     {
         url:"assets/img/galery/galery-1.jpeg",
@@ -114,14 +114,15 @@ const GALERY_DATA = [
     },
     {
         url:"assets/img/galery/galery-9.jpeg",
-        filter:"grupo_2"
+        filter:"grupo_1"
     },
-    {
-        url:"assets/img/galery/galery-10.jpeg",
-        filter:"grupo_2"
-    },
+    
     {
         url:"assets/img/galery/galery-11.jpeg",
+        filter:"grupo_2"
+    },
+    {
+        url:"assets/img/galery/galery-18.jpeg",
         filter:"grupo_2"
     },
     {
@@ -137,6 +138,10 @@ const GALERY_DATA = [
         filter:"grupo_2"
     },
     {
+        url:"assets/img/galery/galery-10.jpeg",
+        filter:"grupo_2"
+    },
+    {
         url:"assets/img/galery/galery-15.jpeg",
         filter:"grupo_2"
     },
@@ -145,15 +150,11 @@ const GALERY_DATA = [
         filter:"grupo_2"
     },
     {
-        url:"assets/img/galery/galery-17.jpeg",
-        filter:"grupo_2"
-    },
-    {
-        url:"assets/img/galery/galery-18.jpeg",
-        filter:"grupo_2"
-    },
-    {
         url:"assets/img/galery/galery-19.jpeg",
+        filter:"grupo_2"
+    },
+    {
+        url:"assets/img/galery/galery-17.jpeg",
         filter:"grupo_2"
     },
 

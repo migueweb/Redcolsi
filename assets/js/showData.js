@@ -40,16 +40,27 @@ function showGaleryItems(images) {
   for(const imagen of images){
     let image = images.indexOf(imagen);
     let galeryItem = document.createElement('div')
-    let filter = `filter-${images[image].filter}`
-    galeryItem.classList.add('col-6', 'col-lg-4', 'col-md-6', 'portfolio-item', filter)
+    let grupo = images[image].filter;
+    let filter = `filter-${images[image].filter}`;
+
+    switch(grupo){
+      case'grupo_1':
+        galeryItem.classList.add(filter);
+        break;
+
+      case'grupo_2':
+        galeryItem.classList.add(filter,'d-none');
+        break;
+    }
+
+    galeryItem.classList.add('col-6', 'col-lg-4', 'col-md-6', 'portfolio-item');
 
     galeryItem.innerHTML = `
       <article class="portfolio-wrap">
         <img src="${images[image].url}" class="img-fluid" alt="">
       </article>
-    `
-    galeyItemsWrapper.appendChild(galeryItem);
-
+    `;
+      galeyItemsWrapper.appendChild(galeryItem);
   }
 }
 
