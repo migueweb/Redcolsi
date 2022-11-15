@@ -196,10 +196,11 @@
         layoutMode: 'masonry'
       });
 
-/*       let portfolioFilters = select('#portfolio-flters li', true);
+    let portfolioFilters = select('#portfolio-flters li', true);
 
       on('click', '#portfolio-flters li', function(e) {
         e.preventDefault();
+        console.log(this);
         portfolioFilters.forEach(function(el) {
           el.classList.remove('filter-active');
         });
@@ -209,7 +210,7 @@
           filter: this.getAttribute('data-filter')
         });
         aos_init();
-      }, true); */
+      }, true); 
     }
 
   });
